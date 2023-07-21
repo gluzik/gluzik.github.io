@@ -1,0 +1,71 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Archangelsk";
+    src: url("./fonts/Archangelsk.ttf");
+}
+
+body {
+    font-family: Roboto;
+}
+
+.title {
+    font-weight: 400;
+    font-family: Archangelsk;
+    font-size: 62px;
+}
+
+.wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    background: center/cover url(../img/background/header.jpg) no-repeat;
+    height: 100vh;
+    margin-bottom: 70px;
+
+    &__line {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contact {
+        display: flex;
+
+        &-item {
+            margin-right: 40px;
+            padding-top: 22px;
+        }
+    }
+}
+
+.platform {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 624px;
+    padding: 70px;
+    background: center url(/img/background/yellow.png) no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+
+    &__title {
+        letter-spacing: 0em;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 19px 50px;
+        background: #000;
+        color: #f8f200;
+        text-decoration: none;
+        font-family: Roboto;
+        font-weight: 700;
+    }
+}

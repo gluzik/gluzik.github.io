@@ -1,0 +1,307 @@
+.subtitle {
+    line-height: 34px;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.info {
+    margin-bottom: 70px;
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        padding-right: 328px;
+        margin-bottom: 70px;
+
+        & span {
+            color: #52bedc;
+            font-weight: 700;
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & img {
+                -webkit-clip-path: polygon(13% 0, 100% 0, 100% 69%, 86% 100%, 0 100%, 0 28%);
+                clip-path: polygon(13% 0, 100% 0, 100% 69%, 86% 100%, 0 100%, 0 28%);
+            }
+        }
+
+        &-right {
+            -webkit-clip-path: polygon(8% 0, 100% 0, 100% 83%, 91% 100%, 0 100%, 0 15%);
+            clip-path: polygon(8% 0, 100% 0, 100% 83%, 91% 100%, 0 100%, 0 15%);
+        }
+    }
+}
+
+.gradient {
+    background: url(/img/background/gradient.png);
+    height: 70px;
+}
+
+.promotion {
+    padding-top: 15px;
+    background: #000;
+    color: #fff;
+
+    &__title {
+        padding-left: 164px;
+        padding-top: 70px;
+        margin-bottom: 39px;
+        background: url(/img/promt/promt.svg) no-repeat;
+    }
+
+    &__subtitle {
+        padding-right: 328px;
+        margin-bottom: 25px;
+        & span {
+            color: #52bedc;
+            font-weight: 700;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+
+        &-input {
+            padding-top: 78px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-name,
+        &-email {
+            font-weight: 300;
+            font-size: 18px;
+            color: #fff;
+            width: 460px;
+            height: 35px;
+            border: none;
+            background-color: #000;
+            border-bottom: #777777 1px solid;
+            margin-bottom: 35px;
+            &:focus {
+                outline: none;
+                border-bottom: #fff 1px solid;
+            }
+        }
+
+        &-scren {
+            width: 460px;
+            height: 120px;
+            border: #777777 1px dashed;
+            margin-bottom: 35px;
+        }
+
+        &-btn {
+            max-width: 192px;
+            padding: 19px 50px;
+            border: none;
+            background: #f8f200;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            margin-bottom: 15px;
+        }
+
+        &-checkbox {
+            & label input {
+                display: none;
+            }
+
+            & label span {
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                position: relative;
+                border: 1px solid gray;
+                background-color: #000;
+                border-radius: 2px;
+            }
+
+            & label input[type="checkbox"]:checked + span:before {
+                content: "\2714";
+                position: absolute;
+                top: 1px;
+                left: 2px;
+                font-size: 13px;
+                color: #f8f200;
+            }
+        }
+    }
+}
+
+.gradient-yellow {
+    height: 70px;
+    background: url(/img/background/gradient-yellow.png);
+}
+
+.partner {
+    padding-top: 70px;
+    background: #f8f200;
+    padding-bottom: 70px;
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__images {
+        margin-right: 32px;
+        & img:first-child {
+            margin-bottom: 26px;
+        }
+
+        & img:last-child {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+    }
+
+    &__item {
+        padding-bottom: 15px;
+        padding-left: 42px;
+
+        &:first-child {
+            padding-top: 10px;
+            background: url(/img/partner/paint.svg) no-repeat;
+            background-position: 1px 8px;
+        }
+
+        &:nth-child(2) {
+            padding-top: 10px;
+            background: url(/img/partner/star.svg) no-repeat;
+            background-position: 0px 8px;
+            background-size: 30px 30px cover;
+        }
+
+        &:last-child {
+            padding-top: 10px;
+            background: url(/img/partner/cube.svg) no-repeat;
+            background-position: 0px 8px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        padding: 19px 50px;
+        background: #000;
+        color: #f8f200;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+.buy {
+    background-color: #000;
+    display: flex;
+
+    &__images {
+        background: url(/img/buy/back-disk.jpg) no-repeat;
+        width: 50%;
+        background-size: cover;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: right;
+    }
+
+    &__block {
+        padding-top: 70px;
+        width: 628px;
+        margin-left: 32px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        color: #52bedc;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        padding-left: 37px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+
+        &:first-child {
+            background: url(/img/buy/disk.svg) no-repeat;
+            background-position: left;
+            background-size: 27px;
+        }
+
+        &:nth-child(2) {
+            background: url(/img/buy/note.svg) no-repeat;
+            background-position: left;
+            background-size: 27px;
+        }
+
+        &:last-child {
+            background: url(/img/buy/stack.svg) no-repeat;
+            background-position: left;
+            background-size: 27px;
+        }
+    }
+
+    &__platform {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: spaced-aroun;
+        margin-right: 305px;
+        margin-top: 25px;
+
+        & div {
+            width: 50%;
+            margin-bottom: 55px;
+        }
+    }
+
+
+}
